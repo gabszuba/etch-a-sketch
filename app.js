@@ -11,7 +11,6 @@ const colorPicker = document.querySelector("#color-picker");
 const eraserBtn = document.getElementById("eraser");
 const eraserAllBtn = document.getElementById("erase-all");
 const randomizeBtn = document.getElementById("randomize");
-const darkeningBtn = document.getElementById("darkening");
 const colorModeBtn = document.getElementById("color-mode");
 
 const slider = document.getElementById("slider");
@@ -48,13 +47,6 @@ function paintSquare(square, color) {
 function createGrid(size) {
   sqrContainer.innerHTML = "";
 
-/*   for (let i = 0; i < size; i++ ) {
-    for (let j = 0; j < size; j++) {
-      const divSquare = document.createElement("div");
-      divSquare.classList.add("div-square");
-      sqrContainer.appendChild(divSquare);
-    }
-  } */
   for (let i = 0; i < size; i++) {
     const row = document.createElement("div");
     row.classList.add("row");
