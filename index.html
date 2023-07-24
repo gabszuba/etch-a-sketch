@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Etch-A-Sketch</h1>
+    <div class="content"> 
+        <div class="container-square" id="container-square"></div>
+    </div>
+    <h3>Settings</h3>
+    <div class="settings" id="settings">
+        <div class="slider-container">
+            <div id="display-value"></div>   
+            <input type="range" id="slider" min="8" max="64" step="8">
+        </div>
+        <div class="color-container">
+            <label for="color-picker">Pick a color</label>
+            <input id="color-picker" type="color" value="#fffff"/>
+        </div>
+        <button class="buttons" id="color-mode">Solid Color</button>
+        <button class="buttons" id="eraser">Eraser</button>
+        <button class="buttons" id="erase-all">Erase All</button>
+        <button class="buttons" id="randomize">Randomize</button>
+        <button class="buttons" id="darkening">Darkening</button>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
